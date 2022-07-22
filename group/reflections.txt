@@ -1,0 +1,8 @@
+One thing we all gained from the project is that we have learnt to use Android Studio. However, probably the most beneficial experience was getting
+familiar with the Google Developer console and using Google services.
+
+Although we have learnt quite a lot in Android Studio, we also think that Android Studio is a pain as well. The most difficult part of our projects so far
+has been trying to merge the different projects we have created into a single application, and all those Gradle files don't make it any easier.
+
+If we were to start over, we would not create different projects individually but build one from scratch together. This would increase our chances of 
+running into merge errors in GitHub and problems of that nature, but we think that those problems would be easier to handle.
