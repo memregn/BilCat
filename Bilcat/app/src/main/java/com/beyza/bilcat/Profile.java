@@ -48,11 +48,41 @@ public class Profile extends AppCompatActivity {
             }
         });
 
-        Button btnHomePage = findViewById(R.id.homePageButton);
+        Button btnHomePage = findViewById(R.id.belowHomePageButton);
         btnHomePage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 goMainActivity();
+            }
+        });
+
+        Button editProfileButton = findViewById(R.id.editProfileButton);
+        editProfileButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) { goEditProfile(); }
+        });
+
+        /*Button catsButton = findViewById(R.id.belowCatsButton);
+        catsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goCatList();
+            }
+        });*/
+
+        /*Button mapButton = findViewById(R.id.belowMapButton);
+        mapButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goMap();
+            }
+        });*/
+
+        Button profileButton = findViewById(R.id.belowProfileButton);
+        profileButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goProfile();
             }
         });
     }
@@ -68,13 +98,33 @@ public class Profile extends AppCompatActivity {
         */
     }
 
-    public void displayEditProfile(View view){
-        //Intent intent = new Intent(this, EditProfile.class);
-        //startActivity(intent);
+    public void goEditProfile(){
+        Intent intent = new Intent(this, EditProfile.class);
+        startActivity(intent);
+        finish();
     }
 
     public void goMainActivity(){
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
+        finish();
+    }
+
+    /*public void goCatList(){
+        Intent intent = new Intent(this, CatList.class);
+        startActivity(intent);
+        finish();
+    }*/
+
+    /*public void goMap(){
+        Intent intent = new Intent(this, Map.class);
+        startActivity(intent);
+        finish();
+    }*/
+
+    public void goProfile() {
+        Intent intent = new Intent(this, Profile.class);
+        startActivity(intent);
+        finish();
     }
 }
