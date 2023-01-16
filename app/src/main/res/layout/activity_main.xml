@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/catListButton"
+        android:layout_width="286dp"
+        android:layout_height="69dp"
+        android:background="#30BFB1"
+        android:text="CAT LIST"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:backgroundTint="#30BFB1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/generalMapButton"
+        android:layout_width="286dp"
+        android:layout_height="69dp"
+        android:background="#E91E63"
+        android:backgroundTint="#E91E63"
+        android:onClick='displayGeneralMap'
+        android:text="GENERAL MAP"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:backgroundTint="#F29985"
+        app:layout_constraintBottom_toTopOf="@+id/catListButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.669"
+        tools:ignore="OnClick" />
+
+
+    <Button
+        android:id="@+id/myProfileButton"
+        android:layout_width="286dp"
+        android:layout_height="69dp"
+        android:background="#F2EAD0"
+        android:text="MY PROFILE"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:backgroundTint="#F2EAD0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/catListButton"
+        app:layout_constraintVertical_bias="0.365" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="151dp"
+        android:layout_height="51dp"
+        android:text="logout"
+        app:backgroundTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.961" />
+
+    <TextView
+        android:id="@+id/homePageTextView"
+        android:layout_width="407dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:background="#A0D9D3"
+        android:shadowColor="#3C3A3A"
+        android:text="    HOME PAGE"
+        android:textColor="@color/black"
+        android:textSize="55dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
